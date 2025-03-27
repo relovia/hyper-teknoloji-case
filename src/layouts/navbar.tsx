@@ -32,9 +32,9 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="container mx-auto">
+    <div className="sticky top-0 z-50 bg-[#212630]">
       {/* Navbar */}
-      <nav className="flex flex-row justify-between items-center px-2 py-4">
+      <nav className="container mx-auto flex flex-row justify-between items-center px-2 py-4">
         {/* Logo */}
         <Link href={"/"}>
           <Image
@@ -46,7 +46,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex flex-row items-center gap-x-4">
+        <div className="hidden md:flex flex-row items-center gap-x-4 text-white">
           {navLinks.map((link) => {
             const isActive = pathname === link.path;
             return (
@@ -70,7 +70,7 @@ export default function Navbar() {
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <button className="p-2">
-                <Menu className="w-6 h-6" />
+                <Menu className="w-6 h-6 text-white" />
               </button>
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-56">

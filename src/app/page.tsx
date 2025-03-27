@@ -1,9 +1,9 @@
-"use client";
+import { ProductCard } from "@/components/product-card";
 
 export default function Home() {
   return (
-    <div className="container mx-auto h-screen">
-      <h1>Landing Page</h1>
+    <div className="container mx-auto min-h-screen">
+      <ProductCard />
     </div>
   );
 }

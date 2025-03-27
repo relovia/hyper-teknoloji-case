@@ -1,12 +1,13 @@
 import CreditCardSlider from "@/components/credit-card-slider";
+import { Home, MailIcon, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="container mx-auto px-2 py-4">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <footer className=" bg-[#272D38] text-white">
+      <div className="container mx-auto px-2 py-4 grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Left Section: Logo and Description*/}
         <div className="flex flex-col gap-y-8">
           <div className="flex justify-between items-center">
@@ -42,12 +43,12 @@ export default function Footer() {
         <div className="grid col-span-2 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {/* Coorporate */}
           <div className="flex flex-col gap-y-4">
-            <h3 className="text-2xl font-semibold">Coorporate</h3>
+            <h3 className="text-2xl font-semibold">Kurumsal</h3>
             <ul className="flex flex-col gap-y-1 text-sm">
               <li>
                 <Link href="/">
                   <span className="hover:text-blue-300 cursor-pointer">
-                    About Us
+                    Hakkımızda
                   </span>
                 </Link>
               </li>
@@ -55,7 +56,7 @@ export default function Footer() {
               <li>
                 <Link href="/">
                   <span className="hover:text-blue-300 cursor-pointer">
-                    Support Center
+                    Çözüm Merkezi
                   </span>
                 </Link>
               </li>
@@ -77,7 +78,7 @@ export default function Footer() {
               <li>
                 <Link href="/">
                   <span className="hover:text-blue-300 cursor-pointer">
-                    Privacy Policy
+                    Gizlilik Politikası
                   </span>
                 </Link>
               </li>
@@ -85,7 +86,7 @@ export default function Footer() {
               <li>
                 <Link href="/">
                   <span className="hover:text-blue-300 cursor-pointer">
-                    User Agreement
+                    Kullanıcı Sözleşmesi
                   </span>
                 </Link>
               </li>
@@ -93,7 +94,7 @@ export default function Footer() {
               <li>
                 <Link href="/">
                   <span className="hover:text-blue-300 cursor-pointer">
-                    Sales Agreement
+                    Satış Sözleşmesi
                   </span>
                 </Link>
               </li>
@@ -101,7 +102,7 @@ export default function Footer() {
               <li>
                 <Link href="/">
                   <span className="hover:text-blue-300 cursor-pointer">
-                    Refund Policy
+                    İptal & İade Koşulları
                   </span>
                 </Link>
               </li>
@@ -117,7 +118,7 @@ export default function Footer() {
               <li>
                 <Link href="/">
                   <span className="hover:text-blue-300 cursor-pointer">
-                    Cookie Policy
+                    Çerez Politikası
                   </span>
                 </Link>
               </li>
@@ -180,7 +181,7 @@ export default function Footer() {
 
           {/* Best Sellers */}
           <div className="flex flex-col gap-y-4">
-            <h3 className="text-2xl font-semibold">Best Sellers</h3>
+            <h3 className="text-2xl font-semibold">Çok Satanlar</h3>
             <ul className="flex flex-col gap-y-1 text-sm">
               <li>
                 <Link href="/">
@@ -234,17 +235,27 @@ export default function Footer() {
 
           {/* Contact Us */}
           <div className="flex flex-col gap-y-4">
-            <h3 className="text-2xl font-semibold">Contact Us</h3>
+            <h3 className="text-2xl font-semibold">Bize Ulaşın</h3>
             <ul className="flex flex-col gap-y-1 text-sm">
-              <li>+90 850 304 12 27</li>
+              <li className="flex items-center gap-x-2">
+                <Phone size={20} />
+                +90 850 304 12 27
+              </li>
 
-              <li>
+              <li className="flex items-center gap-x-2">
+                <Home size={40} />
                 Serbest Liman ve Bölge Posta Kutusu No: 1449 - KKTC / Gazimağusa
               </li>
 
-              <li>bilgi@hyperteknoloji.com</li>
+              <li className="flex items-center gap-x-2">
+                <MailIcon size={20} />
+                bilgi@hyperteknoloji.com
+              </li>
 
-              <li>Penta Game Yazılım ve Bilişim Teknolojileri LTD.</li>
+              <li className="flex items-center gap-x-2">
+                <Home size={28} />
+                Penta Game Yazılım ve Bilişim Teknolojileri LTD.
+              </li>
             </ul>
           </div>
         </div>
@@ -256,14 +267,13 @@ export default function Footer() {
       {/* Copyright Section */}
       <div className="flex flex-col py-4 text-center gap-y-2">
         <span className="text-sm">
-          Copyright © 2025 <strong>Hyper Teknoloji.|</strong> All rights
-          reserved for the texts, images, and contents on our website, cannot be
-          used without permission.
+          Copyright © 2025 <strong>Hyper Teknoloji.|</strong> Sitemizdeki yazı,
+          resim ve içeriklerin her hakkı saklıdır, izinsiz kullanılamaz.
         </span>
 
         <span className="text-sm">
-          <strong>A Penta Game Yazılım ve Bilişim Teknolojileri LTD.</strong>{" "}
-          Company.
+          <strong>Bir Penta Game Yazılım ve Bilişim Teknolojileri LTD.</strong>{" "}
+          İştirakidir.
         </span>
       </div>
     </footer>

@@ -12,8 +12,8 @@ export default function CreditCardSlider() {
   const repeatedLogos = [...logos, ...logos];
 
   return (
-    <div className="overflow-hidden relative mx-auto max-w-xl py-8">
-      <h3 className="text-lg font-semibold">Payment Methods</h3>
+    <div className="overflow-hidden relative mx-auto max-w-xl px-2 lg:px-0 py-8">
+      <h3 className="text-2xl font-semibold">Ödeme Yöntemleri</h3>
       <div className="w-64 flex animate-scroll gap-x-8 items-center py-4">
         {repeatedLogos.map((logo, index) => (
           <Image
